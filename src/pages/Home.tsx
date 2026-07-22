@@ -90,10 +90,10 @@ const Home = () => {
   }, [deviceQuery]);
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100">
+    <div className="min-h-screen bg-[radial-gradient(circle_at_top_left,rgba(56,189,248,0.12),transparent_18%),radial-gradient(circle_at_bottom_right,rgba(168,85,247,0.14),transparent_22%),#020617] text-slate-100">
       <div className="mx-auto w-full max-w-none px-4 py-6 sm:px-6 lg:px-8 xl:px-10">
         <div className="grid gap-6 lg:grid-cols-[320px_minmax(0,1.2fr)] xl:grid-cols-[320px_minmax(0,1.4fr)]">
-          <aside className="lg:sticky lg:top-6 lg:self-start space-y-6 rounded-[32px] border border-slate-800/70 bg-slate-950/70 p-5 shadow-glow backdrop-blur-xl">
+          <aside className="lg:sticky lg:top-6 lg:self-start space-y-6 rounded-[32px] border border-cyan-500/10 bg-gradient-to-br from-slate-950/90 via-[#06182d]/90 to-[#0f1224]/90 p-5 shadow-glow backdrop-blur-xl">
             <div className="flex items-center justify-between gap-4">
               <div>
                 <p className="text-xs uppercase tracking-[0.4em] text-cyan-300/70">Explore Devices</p>
@@ -145,7 +145,7 @@ const Home = () => {
           </aside>
 
           <main className="space-y-8">
-            <section className="overflow-hidden rounded-[40px] border border-slate-800/70 bg-slate-950/70 p-6 shadow-2xl shadow-cyan-500/10 backdrop-blur-xl sm:p-8 xl:p-10">
+            <section className="overflow-hidden rounded-[40px] border border-cyan-500/10 bg-gradient-to-br from-slate-950/80 via-[#061833]/95 to-[#0b0f20]/95 p-6 shadow-2xl shadow-cyan-900/20 backdrop-blur-xl sm:p-8 xl:p-10">
               <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] xl:grid-cols-[1.15fr_0.85fr]">
                 <div className="space-y-6">
                   <motion.div
@@ -162,10 +162,10 @@ const Home = () => {
                       Explore how biomedical engineers repair damaged heart valves through modern medical devices.
                     </p>
                   </motion.div>
-                  <div className="relative overflow-hidden rounded-[28px] border border-slate-800/80 bg-gradient-to-br from-slate-900/80 via-slate-950 to-slate-900/70 p-6 shadow-2xl shadow-slate-950/40">
+                  <div className="relative overflow-hidden rounded-[28px] border border-cyan-500/10 bg-gradient-to-br from-slate-950/80 via-[#061b36]/95 to-[#0f0f22]/95 p-6 shadow-2xl shadow-cyan-900/30">
                     <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(56,189,248,0.18),transparent_25%),radial-gradient(circle_at_bottom_right,rgba(248,113,113,0.18),transparent_20%)]" />
                     <div className="relative grid gap-4 lg:grid-cols-[0.95fr_1.05fr]">
-                      <div className="rounded-[24px] border border-slate-800/90 bg-slate-950/80 p-5 shadow-inner shadow-cyan-500/10">
+                      <div className="rounded-[24px] border border-cyan-500/10 bg-slate-950/80 p-5 shadow-inner shadow-cyan-900/10">
                         <div className="flex items-center justify-between gap-3">
                           <div>
                             <p className="text-xs uppercase tracking-[0.3em] text-cyan-300/80">What this experience offers</p>

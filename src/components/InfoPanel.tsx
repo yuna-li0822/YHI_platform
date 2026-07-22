@@ -9,10 +9,10 @@ const InfoPanel = ({ device, activeHotspot }: InfoPanelProps) => {
   const hotspot = device.hotspots.find((hotspot) => hotspot.id === activeHotspot);
 
   return (
-    <div className="rounded-[40px] border border-slate-800/70 bg-slate-950/80 p-6 shadow-2xl shadow-slate-950/30 backdrop-blur-xl">
-      <p className="text-sm uppercase tracking-[0.35em] text-sky-300/80">Information</p>
-      <h2 className="mt-4 text-3xl font-semibold text-slate-50">{device.name}</h2>
-      <p className="mt-3 text-sm leading-7 text-slate-300">{device.description}</p>
+    <div className="rounded-[40px] border border-cyan-500/10 bg-gradient-to-br from-slate-950/80 via-slate-900/80 to-[#050b17]/90 p-6 shadow-2xl shadow-cyan-900/20 backdrop-blur-xl">
+      <p className="text-sm uppercase tracking-[0.35em] text-cyan-200/80">Information</p>
+      <h2 className="mt-4 text-3xl font-semibold text-cyan-50">{device.name}</h2>
+      <p className="mt-3 text-sm leading-7 text-cyan-200/80">{device.description}</p>
 
       <div className="mt-6 grid gap-4">
         <div className="rounded-3xl bg-slate-900/80 p-5">
@@ -68,9 +68,9 @@ const InfoPanel = ({ device, activeHotspot }: InfoPanelProps) => {
         </ul>
       </div>
 
-      <div className="mt-6 rounded-3xl bg-cyan-950/10 p-5 text-slate-200">
+      <div className="mt-6 rounded-3xl bg-gradient-to-r from-cyan-950/20 via-slate-900/70 to-fuchsia-950/20 p-5 text-cyan-100">
         <p className="text-sm uppercase tracking-[0.2em] text-cyan-200/80">Spotlight</p>
-        <p className="mt-3 text-sm leading-7 text-slate-300">
+        <p className="mt-3 text-sm leading-7 text-cyan-200/80">
           {hotspot ? hotspot.description : 'Hover or click a hotspot on the model to learn about a component.'}
         </p>
       </div>

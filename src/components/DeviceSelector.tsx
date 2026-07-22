@@ -33,8 +33,8 @@ const DeviceSelector = ({ devices, selectedDevice, onSelect }: DeviceSelectorPro
             onClick={() => onSelect(device)}
             className={`group flex w-full items-center justify-between gap-4 rounded-3xl border px-4 py-4 text-left transition hover:-translate-y-0.5 ${
               selected
-                ? 'border-cyan-400/80 bg-cyan-400/10 text-cyan-100 shadow-glow'
-                : 'border-slate-800/70 bg-slate-900/70 text-slate-200 hover:border-slate-600/80 hover:bg-slate-900'
+                ? 'border-fuchsia-400/70 bg-gradient-to-r from-fuchsia-500/10 to-cyan-500/10 text-cyan-100 shadow-glow'
+                : 'border-cyan-500/15 bg-slate-900/75 text-cyan-100 hover:border-cyan-400/40 hover:bg-slate-900'
             }`}
           >
             <div className="flex items-center gap-4">

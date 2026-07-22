@@ -17,8 +17,9 @@ html, body, #root {
 
 body {
   margin: 0;
-  background: radial-gradient(circle at top left, rgba(59, 130, 246, 0.2), transparent 24%),
-    radial-gradient(circle at bottom right, rgba(248, 113, 113, 0.18), transparent 28%),
+  background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.14), transparent 18%),
+    radial-gradient(circle at bottom right, rgba(168, 85, 247, 0.12), transparent 22%),
+    radial-gradient(circle at 70% 10%, rgba(14, 61, 112, 0.18), transparent 25%),
     #020617;
   font-feature-settings: 'cv11' 1;
 }
