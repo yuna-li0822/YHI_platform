@@ -91,9 +91,9 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100">
-      <div className="mx-auto max-w-screen-2xl px-4 py-6 sm:px-6 lg:px-8">
-        <div className="grid gap-8 xl:grid-cols-[320px_minmax(0,1fr)_360px]">
-          <aside className="space-y-6 rounded-[32px] border border-slate-800/70 bg-slate-950/70 p-5 shadow-glow backdrop-blur-xl">
+      <div className="mx-auto w-full max-w-none px-4 py-6 sm:px-6 lg:px-8 xl:px-10">
+        <div className="grid gap-6 lg:grid-cols-[320px_minmax(0,1.2fr)] xl:grid-cols-[320px_minmax(0,1.4fr)]">
+          <aside className="lg:sticky lg:top-6 lg:self-start space-y-6 rounded-[32px] border border-slate-800/70 bg-slate-950/70 p-5 shadow-glow backdrop-blur-xl">
             <div className="flex items-center justify-between gap-4">
               <div>
                 <p className="text-xs uppercase tracking-[0.4em] text-cyan-300/70">Explore Devices</p>
@@ -145,8 +145,8 @@ const Home = () => {
           </aside>
 
           <main className="space-y-8">
-            <section className="overflow-hidden rounded-[40px] border border-slate-800/70 bg-slate-950/70 p-8 shadow-2xl shadow-cyan-500/10 backdrop-blur-xl">
-              <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr]">
+            <section className="overflow-hidden rounded-[40px] border border-slate-800/70 bg-slate-950/70 p-6 shadow-2xl shadow-cyan-500/10 backdrop-blur-xl sm:p-8 xl:p-10">
+              <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] xl:grid-cols-[1.15fr_0.85fr]">
                 <div className="space-y-6">
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -247,7 +247,7 @@ const Home = () => {
               </div>
             </section>
 
-            <section className="grid gap-6 xl:grid-cols-[1.04fr_0.96fr]">
+            <section className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr] xl:grid-cols-[1.1fr_0.9fr]">
               <div className="rounded-[40px] border border-slate-800/70 bg-slate-950/80 p-5 shadow-2xl shadow-slate-950/40 backdrop-blur-xl">
                 <HeartViewer
                   device={selectedDevice}
@@ -260,7 +260,7 @@ const Home = () => {
               <InfoPanel device={selectedDevice} activeHotspot={activeHotspot} />
             </section>
 
-            <section className="grid gap-6 xl:grid-cols-[1.1fr_0.9fr]">
+            <section className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
               <Comparison devices={comparisonPair} />
               <Quiz questions={quizQuestions} />
             </section>
