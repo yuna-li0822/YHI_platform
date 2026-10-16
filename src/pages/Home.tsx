@@ -90,16 +90,16 @@ const Home = () => {
   }, [deviceQuery]);
 
   return (
-    <div className="min-h-screen bg-[radial-gradient(circle_at_top_left,rgba(56,189,248,0.12),transparent_18%),radial-gradient(circle_at_bottom_right,rgba(168,85,247,0.14),transparent_22%),#020617] text-slate-100">
+    <div className="min-h-screen text-rose-950">
       <div className="mx-auto w-full max-w-none px-4 py-6 sm:px-6 lg:px-8 xl:px-10">
         <div className="grid gap-6 lg:grid-cols-[320px_minmax(0,1.2fr)] xl:grid-cols-[320px_minmax(0,1.4fr)]">
-          <aside className="lg:sticky lg:top-6 lg:self-start space-y-6 rounded-[32px] border border-cyan-500/10 bg-gradient-to-br from-slate-950/90 via-[#06182d]/90 to-[#0f1224]/90 p-5 shadow-glow backdrop-blur-xl">
+          <aside className="lg:sticky lg:top-6 lg:self-start space-y-6 rounded-[32px] border border-rose-200 bg-gradient-to-br from-white via-rose-50 to-pink-50 p-5 shadow-glow backdrop-blur-xl">
             <div className="flex items-center justify-between gap-4">
               <div>
-                <p className="text-xs uppercase tracking-[0.4em] text-cyan-300/70">Explore Devices</p>
-                <h2 className="mt-2 text-2xl font-semibold text-slate-50">Heart Valve Library</h2>
+                <p className="text-xs uppercase tracking-[0.4em] text-rose-700">Explore Devices</p>
+                <h2 className="mt-2 text-2xl font-semibold text-rose-950">Heart Valve Library</h2>
               </div>
-              <div className="rounded-2xl bg-slate-900/80 p-3 text-cyan-300 shadow-sm">
+              <div className="rounded-2xl bg-rose-50/80 p-3 text-rose-700 shadow-sm">
                 <FiHeart size={22} />
               </div>
             </div>
@@ -113,30 +113,30 @@ const Home = () => {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="rounded-3xl border border-slate-800/80 bg-slate-900/70 p-5 shadow-xl"
+              className="rounded-3xl border border-rose-200 bg-rose-50/80 p-5 shadow-xl"
             >
               <div className="flex items-center justify-between gap-3">
                 <div>
-                  <p className="text-sm uppercase tracking-[0.25em] text-sky-300/80">Comparison</p>
-                  <h3 className="mt-2 text-lg font-semibold text-slate-100">Quick Facts</h3>
+                  <p className="text-sm uppercase tracking-[0.25em] text-rose-700">Comparison</p>
+                  <h3 className="mt-2 text-lg font-semibold text-rose-950">Quick Facts</h3>
                 </div>
-                <div className="rounded-2xl bg-slate-800 p-3 text-sky-300 shadow-sm">
+                <div className="rounded-2xl bg-rose-50/80 p-3 text-rose-700 shadow-sm">
                   <MdCompareArrows size={22} />
                 </div>
               </div>
-              <p className="mt-4 text-sm leading-6 text-slate-300">
+              <p className="mt-4 text-sm leading-6 text-rose-700">
                 Pick any two devices to compare strengths, materials, and intended patients.
               </p>
               <div className="mt-5 grid gap-3">
                 <button
                   onClick={() => setComparisonPair([selectedDevice, comparisonPair[1]])}
-                  className="rounded-3xl border border-slate-800/80 bg-slate-900/75 px-4 py-3 text-left text-sm text-slate-200 transition hover:border-cyan-400/50 hover:bg-slate-800"
+                  className="rounded-3xl border border-rose-200 bg-rose-50/80 px-4 py-3 text-left text-sm text-rose-900 transition hover:border-rose-400/50 hover:bg-rose-100"
                 >
                   Primary: {selectedDevice.name}
                 </button>
                 <button
                   onClick={() => setComparisonPair([comparisonPair[0], selectedDevice])}
-                  className="rounded-3xl border border-slate-800/80 bg-slate-900/75 px-4 py-3 text-left text-sm text-slate-200 transition hover:border-cyan-400/50 hover:bg-slate-800"
+                  className="rounded-3xl border border-rose-200 bg-rose-50/80 px-4 py-3 text-left text-sm text-rose-900 transition hover:border-rose-400/50 hover:bg-rose-100"
                 >
                   Secondary: {comparisonPair[1].name}
                 </button>
@@ -145,7 +145,7 @@ const Home = () => {
           </aside>
 
           <main className="space-y-8">
-            <section className="overflow-hidden rounded-[40px] border border-cyan-500/10 bg-gradient-to-br from-slate-950/80 via-[#061833]/95 to-[#0b0f20]/95 p-6 shadow-2xl shadow-cyan-900/20 backdrop-blur-xl sm:p-8 xl:p-10">
+            <section className="overflow-hidden rounded-[40px] border border-rose-200 bg-gradient-to-br from-white via-rose-50 to-pink-50 p-6 shadow-2xl shadow-rose-200/50 backdrop-blur-xl sm:p-8 xl:p-10">
               <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] xl:grid-cols-[1.15fr_0.85fr]">
                 <div className="space-y-6">
                   <motion.div
@@ -154,24 +154,24 @@ const Home = () => {
                     transition={{ duration: 0.55 }}
                     className="space-y-4"
                   >
-                    <p className="text-sm uppercase tracking-[0.35em] text-cyan-300/80">Young Heart Innovators</p>
-                    <h1 className="text-4xl font-semibold text-slate-50 sm:text-5xl">
+                    <p className="text-sm uppercase tracking-[0.35em] text-rose-700">Young Heart Innovators</p>
+                    <h1 className="text-4xl font-semibold text-rose-950 sm:text-5xl">
                       Interactive Heart Valve Biomedical Device Explorer
                     </h1>
-                    <p className="max-w-2xl text-lg leading-8 text-slate-300">
+                    <p className="max-w-2xl text-lg leading-8 text-rose-700">
                       Explore how biomedical engineers repair damaged heart valves through modern medical devices.
                     </p>
                   </motion.div>
-                  <div className="relative overflow-hidden rounded-[28px] border border-cyan-500/10 bg-gradient-to-br from-slate-950/80 via-[#061b36]/95 to-[#0f0f22]/95 p-6 shadow-2xl shadow-cyan-900/30">
-                    <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(56,189,248,0.18),transparent_25%),radial-gradient(circle_at_bottom_right,rgba(248,113,113,0.18),transparent_20%)]" />
+                  <div className="relative overflow-hidden rounded-[28px] border border-rose-200 bg-gradient-to-br from-white via-rose-50 to-pink-50 p-6 shadow-2xl shadow-rose-200/50">
+                    <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(244,114,182,0.14),transparent_25%),radial-gradient(circle_at_bottom_right,rgba(251,207,232,0.18),transparent_20%)]" />
                     <div className="relative grid gap-4 lg:grid-cols-[0.95fr_1.05fr]">
-                      <div className="rounded-[24px] border border-cyan-500/10 bg-slate-950/80 p-5 shadow-inner shadow-cyan-900/10">
+                      <div className="rounded-[24px] border border-rose-200 bg-rose-50/80 p-5 shadow-inner shadow-rose-200/50">
                         <div className="flex items-center justify-between gap-3">
                           <div>
-                            <p className="text-xs uppercase tracking-[0.3em] text-cyan-300/80">What this experience offers</p>
-                            <h3 className="mt-2 text-xl font-semibold text-slate-100">A guided tour through cardiac device innovation</h3>
+                            <p className="text-xs uppercase tracking-[0.3em] text-rose-700">What this experience offers</p>
+                            <h3 className="mt-2 text-xl font-semibold text-rose-950">A guided tour through cardiac device innovation</h3>
                           </div>
-                          <div className="rounded-2xl bg-cyan-400/10 p-3 text-cyan-300">
+                          <div className="rounded-2xl bg-rose-400/10 p-3 text-rose-700">
                             <FiCpu size={18} />
                           </div>
                         </div>
@@ -179,14 +179,14 @@ const Home = () => {
                           {experienceHighlights.map((item) => {
                             const Icon = item.icon;
                             return (
-                              <div key={item.title} className="rounded-2xl border border-slate-800/70 bg-slate-900/70 p-4">
+                              <div key={item.title} className="rounded-2xl border border-rose-200 bg-rose-50/80 p-4">
                                 <div className="flex items-center gap-3">
-                                  <div className="rounded-2xl bg-slate-800/80 p-2 text-cyan-300">
+                                  <div className="rounded-2xl bg-rose-50/80 p-2 text-rose-700">
                                     <Icon size={16} />
                                   </div>
                                   <div>
-                                    <p className="text-sm font-semibold text-slate-100">{item.title}</p>
-                                    <p className="mt-1 text-sm leading-6 text-slate-400">{item.text}</p>
+                                    <p className="text-sm font-semibold text-rose-950">{item.title}</p>
+                                    <p className="mt-1 text-sm leading-6 text-rose-700">{item.text}</p>
                                   </div>
                                 </div>
                               </div>
@@ -194,30 +194,30 @@ const Home = () => {
                           })}
                         </div>
                       </div>
-                      <div className="rounded-[24px] border border-slate-800/90 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-800 p-5 shadow-lg shadow-slate-950/30">
+                      <div className="rounded-[24px] border border-rose-200 bg-gradient-to-br from-white via-rose-50 to-pink-50 p-5 shadow-lg shadow-rose-200/50">
                         <div className="flex items-center justify-between gap-3">
                           <div>
-                            <p className="text-xs uppercase tracking-[0.3em] text-pink-300/80">Now exploring</p>
-                            <h3 className="mt-2 text-xl font-semibold text-slate-100">{selectedDevice.name}</h3>
+                            <p className="text-xs uppercase tracking-[0.3em] text-rose-700">Now exploring</p>
+                            <h3 className="mt-2 text-xl font-semibold text-rose-950">{selectedDevice.name}</h3>
                           </div>
-                          <div className="rounded-2xl bg-pink-400/10 p-3 text-pink-300">
+                          <div className="rounded-2xl bg-rose-400/10 p-3 text-rose-700">
                             <FiHeart size={18} />
                           </div>
                         </div>
-                        <div className="mt-5 rounded-[22px] border border-slate-800/80 bg-slate-950/80 p-5">
-                          <p className="text-sm leading-7 text-slate-300">{selectedDevice.description}</p>
+                        <div className="mt-5 rounded-[22px] border border-rose-200 bg-rose-50/80 p-5">
+                          <p className="text-sm leading-7 text-rose-700">{selectedDevice.description}</p>
                           <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                            <div className="rounded-2xl bg-slate-900/80 p-4">
-                              <p className="text-xs uppercase tracking-[0.25em] text-slate-400">Clinical purpose</p>
-                              <p className="mt-2 text-sm text-slate-200">{selectedDevice.clinicalPurpose}</p>
+                            <div className="rounded-2xl bg-rose-50/80 p-4">
+                              <p className="text-xs uppercase tracking-[0.25em] text-rose-500">Clinical purpose</p>
+                              <p className="mt-2 text-sm text-rose-900">{selectedDevice.clinicalPurpose}</p>
                             </div>
-                            <div className="rounded-2xl bg-slate-900/80 p-4">
-                              <p className="text-xs uppercase tracking-[0.25em] text-slate-400">FDA approval</p>
-                              <p className="mt-2 text-sm text-slate-200">{selectedDevice.fdaApproval}</p>
+                            <div className="rounded-2xl bg-rose-50/80 p-4">
+                              <p className="text-xs uppercase tracking-[0.25em] text-rose-500">FDA approval</p>
+                              <p className="mt-2 text-sm text-rose-900">{selectedDevice.fdaApproval}</p>
                             </div>
                           </div>
                         </div>
-                        <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-2 text-sm text-cyan-200">
+                        <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-rose-200 bg-rose-400/10 px-3 py-2 text-sm text-rose-900">
                           <FiArrowRight size={15} />
                           Tap the device cards to switch focus
                         </div>
@@ -226,17 +226,17 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="grid gap-6">
-                  <div className="rounded-[32px] border border-slate-800/70 bg-slate-950/80 p-6 shadow-glow backdrop-blur-xl">
-                    <p className="text-sm uppercase tracking-[0.35em] text-sky-300/80">Featured Device</p>
-                    <h2 className="mt-4 text-2xl font-semibold text-slate-50">{selectedDevice.name}</h2>
-                    <p className="mt-3 text-sm leading-7 text-slate-300">{selectedDevice.description}</p>
-                    <div className="mt-6 grid gap-3 text-sm text-slate-200">
-                      <div className="rounded-3xl bg-slate-900/70 p-4">Clinical Purpose: {selectedDevice.clinicalPurpose}</div>
-                      <div className="rounded-3xl bg-slate-900/70 p-4">FDA Year: {selectedDevice.fdaApproval}</div>
+                  <div className="rounded-[32px] border border-rose-200 bg-rose-50/80 p-6 shadow-glow backdrop-blur-xl">
+                    <p className="text-sm uppercase tracking-[0.35em] text-rose-700">Featured Device</p>
+                    <h2 className="mt-4 text-2xl font-semibold text-rose-950">{selectedDevice.name}</h2>
+                    <p className="mt-3 text-sm leading-7 text-rose-700">{selectedDevice.description}</p>
+                    <div className="mt-6 grid gap-3 text-sm text-rose-900">
+                      <div className="rounded-3xl bg-rose-50/80 p-4">Clinical Purpose: {selectedDevice.clinicalPurpose}</div>
+                      <div className="rounded-3xl bg-rose-50/80 p-4">FDA Year: {selectedDevice.fdaApproval}</div>
                     </div>
                   </div>
-                  <div className="rounded-[32px] border border-slate-800/70 bg-slate-950/80 p-6 shadow-glow backdrop-blur-xl">
-                    <h3 className="text-xl font-semibold text-slate-100">Learning Mode</h3>
+                  <div className="rounded-[32px] border border-rose-200 bg-rose-50/80 p-6 shadow-glow backdrop-blur-xl">
+                    <h3 className="text-xl font-semibold text-rose-950">Learning Mode</h3>
                     <div className="mt-5 space-y-4">
                       {learningTopics.map((topic) => (
                         <LearningCard key={topic.title} title={topic.title} text={topic.text} accent={topic.accent} />
@@ -248,7 +248,7 @@ const Home = () => {
             </section>
 
             <section className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr] xl:grid-cols-[1.1fr_0.9fr]">
-              <div className="rounded-[40px] border border-slate-800/70 bg-slate-950/80 p-5 shadow-2xl shadow-slate-950/40 backdrop-blur-xl">
+              <div className="rounded-[40px] border border-rose-200 bg-rose-50/80 p-5 shadow-2xl shadow-rose-200/50 backdrop-blur-xl">
                 <HeartViewer
                   device={selectedDevice}
                   activeHotspot={activeHotspot}
@@ -265,15 +265,15 @@ const Home = () => {
               <Quiz questions={quizQuestions} />
             </section>
 
-            <footer className="rounded-[40px] border border-slate-800/70 bg-slate-950/80 p-6 shadow-2xl shadow-slate-950/30 backdrop-blur-xl">
+            <footer className="rounded-[40px] border border-rose-200 bg-rose-50/80 p-6 shadow-2xl shadow-rose-200/50 backdrop-blur-xl">
               <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
                 <div>
-                  <p className="text-sm uppercase tracking-[0.35em] text-cyan-300/80">Final experience</p>
-                  <h3 className="mt-2 text-2xl font-semibold text-slate-50">A polished educational experience for biomedical device exploration</h3>
+                  <p className="text-sm uppercase tracking-[0.35em] text-rose-700">Final experience</p>
+                  <h3 className="mt-2 text-2xl font-semibold text-rose-950">A polished educational experience for biomedical device exploration</h3>
                 </div>
                 <div className="flex flex-wrap gap-3">
                   {['Interactive learning', 'Clinical context', 'Device comparison'].map((label) => (
-                    <span key={label} className="rounded-full border border-slate-800/70 bg-slate-900/80 px-4 py-2 text-sm text-slate-300">
+                    <span key={label} className="rounded-full border border-rose-200 bg-rose-50/80 px-4 py-2 text-sm text-rose-900">
                       {label}
                     </span>
                   ))}
