@@ -82,7 +82,7 @@ const Home = () => {
   const [selectedDevice, setSelectedDevice] = useState<HeartDevice>(heartDevices[2]);
   const [comparisonPair, setComparisonPair] = useState<[HeartDevice, HeartDevice]>([heartDevices[0], heartDevices[2]]);
   const [activeHotspot, setActiveHotspot] = useState<string | null>(null);
-  const [viewerControls, setViewerControls] = useState<ControlState>({ wireframe: false, crossSection: false, autoRotate: true, transparency: 0.4, background: 'slate' });
+  const [viewerControls, setViewerControls] = useState<ControlState>({ wireframe: false, crossSection: false, autoRotate: true, transparency: 0, background: 'slate' });
 
   const filteredDevices = useMemo(() => {
     const query = deviceQuery.toLowerCase();
